@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Exo 2", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Exo 2", sans-serif;
+  --color-brand-magenta: #B5196F;
+  --color-brand-orange: #FF6347;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  50% { transform: translateX(100%) skewX(-15deg); }
+  100% { transform: translateX(100%) skewX(-15deg); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shine 3s infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  white-space: nowrap;
+}
+
+.reflection-container {
+  position: relative;
+  display: inline-block;
+}
+
+.reflection-image {
+  position: relative;
+  z-index: 2;
+}
+
+.reflection-effect {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  transform: scaleY(-1);
+  opacity: 0.3;
+  filter: blur(2px);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #1a1a1a;
+}
+
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #B5196F 0%, #FF6347 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #B5196F 0%, #FF6347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
