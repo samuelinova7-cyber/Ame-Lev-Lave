@@ -11,6 +11,7 @@ export const NAV_ITEMS = [
   { href: '#birthday', label: 'Aniversário' },
   { href: '#restrictions', label: 'Cuidados' },
   { href: '#faq', label: 'FAQ' },
+  { href: '#instagram', label: 'Instagram' },
   { href: '#location', label: 'Localização' },
 ];
 
@@ -212,6 +213,13 @@ export const WHATSAPP_LINK = 'https://wa.me/5521951118800';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/amelevlave/';
 
 export const LOCKER_VIDEO_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOjDp4rJtifm6IWbYkK7rkvA2IrKfxEbdvPfnJXgRYOhFyoJr1Q0dG6j7HLTI6xluRElPOoaSWajwP40-0NUemNGbv-pO3sGNLhgTY.mp4';
+
+export const INSTAGRAM_FEED = [
+  { type: 'video', url: 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOzYq_w3l94jh6buEVWgIQA6-2TXJgzODR-j8fdHL_EtyfCxP_7meNFrGx61KkyCaniVGIt8tCuLdctzERHhKUth8FyWJp7MQISn0U.mp4' },
+  { type: 'image', url: 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/Captura%20de%20tela%202026-03-22%20181608.png' },
+  { type: 'video', url: 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOjDp4rJtifm6IWbYkK7rkvA2IrKfxEbdvPfnJXgRYOhFyoJr1Q0dG6j7HLTI6xluRElPOoaSWajwP40-0NUemNGbv-pO3sGNLhgTY.mp4' },
+  { type: 'image', url: 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/Captura%20de%20tela%202026-03-22%20181435.png' },
+];
 
 export const LOGO_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-03-20%20at%206.45.23%20PM.jpeg';
 export const HERO_IMAGE_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-03-20%20at%207.03.31%20PM.jpeg';

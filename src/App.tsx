@@ -16,6 +16,7 @@ import { Comparison } from './components/Comparison';
 import { BirthdayPromo } from './components/BirthdayPromo';
 import { Restrictions } from './components/Restrictions';
 import { FAQ } from './components/FAQ';
+import { InstagramFeed } from './components/InstagramFeed';
 import { Location } from './components/Location';
 import { Footer } from './components/Footer';
 
@@ -35,6 +36,7 @@ export default function App() {
         <BirthdayPromo />
         <Restrictions />
         <FAQ />
+        <InstagramFeed />
         <Location />
       </main>
       <Footer />
