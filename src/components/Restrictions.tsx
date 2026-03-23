@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { RESTRICTIONS } from '../constants';
+import { RESTRICTIONS, WHATSAPP_LINK } from '../constants';
 
 export const Restrictions = () => {
   return (
@@ -48,7 +48,7 @@ export const Restrictions = () => {
                   </p>
                 </div>
                 <a
-                  href="https://wa.me/5521951118800"
+                  href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-10 inline-flex items-center gap-2 text-brand-magenta font-black text-lg hover:gap-4 transition-all"

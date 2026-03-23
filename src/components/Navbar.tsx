@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles } from 'lucide-react';
-import { NAV_ITEMS, LOGO_URL, TICKER_TEXT } from '../constants';
+import { NAV_ITEMS, LOGO_URL, TICKER_TEXT, WHATSAPP_LINK } from '../constants';
 import { motion } from 'motion/react';
 
 export const Navbar = () => {
@@ -79,7 +79,7 @@ export const Navbar = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/5521951118800"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-gradient text-white px-6 py-2.5 rounded-full text-sm font-bold hover:shadow-xl transition-all active:scale-95"
@@ -116,7 +116,7 @@ export const Navbar = () => {
             ))}
             <div className="pt-4">
               <a
-                href="https://wa.me/5521951118800"
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center bg-brand-gradient text-white px-5 py-4 rounded-2xl text-base font-bold shadow-lg"

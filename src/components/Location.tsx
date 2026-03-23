@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Navigation, MessageCircle } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINK, ADDRESS, PHONE_DISPLAY } from '../constants';
 
 export const Location = () => {
-  const address = "R. São Mateus, 100 - São Mateus, Juiz de Fora - MG, 36033-000";
+  const address = ADDRESS;
   const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
 
   return (

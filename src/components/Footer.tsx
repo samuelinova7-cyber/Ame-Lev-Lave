@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, MapPin, Phone, Mail, Sparkles } from 'lucide-react';
-import { INSTAGRAM_LINK, WHATSAPP_LINK, LOGO_URL } from '../constants';
+import { INSTAGRAM_LINK, WHATSAPP_LINK, LOGO_URL, ADDRESS, PHONE_DISPLAY } from '../constants';
 import { motion } from 'motion/react';
 
 export const Footer = () => {
@@ -61,11 +61,11 @@ export const Footer = () => {
             <ul className="space-y-6">
               <li className="flex items-start gap-4 text-slate-400">
                 <MapPin className="text-brand-orange flex-shrink-0" size={24} />
-                <span className="font-medium">R. São Mateus, 100 - São Mateus, Juiz de Fora - MG, 36033-000</span>
+                <span className="font-medium">{ADDRESS}</span>
               </li>
               <li className="flex items-center gap-4 text-slate-400">
                 <Phone className="text-brand-magenta flex-shrink-0" size={24} />
-                <span className="font-medium">(21) 95111-8800</span>
+                <span className="font-medium">({PHONE_DISPLAY.substring(0, 2)}) {PHONE_DISPLAY.substring(3)}</span>
               </li>
               <li className="flex items-center gap-4 text-slate-400">
                 <Mail className="text-brand-orange flex-shrink-0" size={24} />
@@ -82,7 +82,7 @@ export const Footer = () => {
                 <span className="font-bold text-brand-orange">24 Horas</span>
               </div>
               <p className="text-xs text-slate-500 leading-relaxed">
-                * Atendimento presencial em horário comercial. Autoatendimento disponível 24h.
+                * Atendimento presencial entrar em contato. Autoatendimento disponível 24h.
               </p>
             </div>
           </div>

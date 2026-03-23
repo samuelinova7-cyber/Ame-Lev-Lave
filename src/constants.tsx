@@ -38,23 +38,23 @@ export const DIFFERENTIALS = [
 export const HOW_IT_WORKS = [
   {
     step: '1',
-    title: 'Você solicita',
-    description: 'Peça a coleta pelo site ou WhatsApp em poucos segundos.'
+    title: 'Quantidade de roupas',
+    description: 'Meça suas roupas no cesto medidor respeitando os limites do cesto.'
   },
   {
     step: '2',
-    title: 'Nós buscamos',
-    description: 'Retiramos suas roupas no conforto da sua casa.'
+    title: 'Vá ao totem',
+    description: 'Escolha a máquina desejada e realize o pagamento.'
   },
   {
     step: '3',
-    title: 'Lavamos com amor',
-    description: 'Praticidade total em nosso sistema self-service moderno.'
+    title: 'Inicie a lavagem',
+    description: 'Coloque as roupas na máquina e aperte os botões para iniciar.'
   },
   {
     step: '4',
-    title: 'Entregamos cheirosa',
-    description: 'Roupas prontas para usar, dobradas e perfumadas.'
+    title: 'Repita para secar',
+    description: 'Após lavar, transfira para a secadora e repita o processo.'
   }
 ];
 
@@ -102,11 +102,11 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'Como funciona o desconto de aniversário?',
-    answer: 'No mês do seu aniversário, use o cupom ANIVERSARIO90 no totem durante o horário do Corujão (00h às 05:59) para ganhar 90% de desconto.',
+    answer: 'No mês do seu aniversário, você ganha 90% de desconto com o cupom ANIVERSARIO90. Ele é válido para qualquer horário, mas se usado durante o Corujão (00h às 05:59), sua lavagem sai pelo menor valor da região: apenas R$ 1,35!',
   },
   {
     question: 'Qual o tamanho do cesto?',
-    answer: 'Nosso cesto tem capacidade de 43 Litros, sendo 34% maior que o padrão do mercado, permitindo que você lave mais por menos.',
+    answer: 'Nosso cesto tem capacidade de 43 Litros, sendo 34% maior que o padrão do mercado. *Certifique-se de medir suas roupas no cesto medidor antes de iniciar.',
   },
   {
     question: 'Preciso levar sabão e amaciante?',
@@ -122,7 +122,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'Posso lavar edredom?',
-    answer: 'Sim! Nossas máquinas de 43L comportam edredons de casal e até king size com facilidade.',
+    answer: 'Sim! Nossas máquinas de 43L comportam edredons de casal, desde que caibam no cesto medidor disponível na loja.',
   },
   {
     question: 'A lavanderia funciona aos domingos?',
@@ -130,7 +130,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'As roupas saem passadas?',
-    answer: 'As roupas saem quentes e macias da secadora. Se você dobrá-las imediatamente, a maioria das peças nem precisará de ferro!',
+    answer: 'As roupas saem quentes, macias e prontas para uso. Se você dobrá-las imediatamente após a secagem, a maioria das peças nem precisará de ferro!',
   },
   {
     question: 'O ambiente é seguro durante a noite?',
@@ -209,7 +209,9 @@ export const REVIEW_GUIDE = [
   { step: '5', text: 'Clique em "Postar" e ajude nossa comunidade a crescer! ❤️' }
 ];
 
-export const WHATSAPP_LINK = 'https://wa.me/5521951118800';
+export const WHATSAPP_LINK = 'https://wa.me/5521972957022';
+export const PHONE_DISPLAY = '21 97295-7022';
+export const ADDRESS = 'Av. Olegário Maciel, 470 - Santa Helena, Juiz de Fora - MG, 36015-350';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/amelevlave/';
 
 export const LOCKER_VIDEO_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/SnapInsta.to_AQOjDp4rJtifm6IWbYkK7rkvA2IrKfxEbdvPfnJXgRYOhFyoJr1Q0dG6j7HLTI6xluRElPOoaSWajwP40-0NUemNGbv-pO3sGNLhgTY.mp4';
@@ -224,4 +226,4 @@ export const INSTAGRAM_FEED = [
 export const LOGO_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-03-20%20at%206.45.23%20PM.jpeg';
 export const HERO_IMAGE_URL = 'https://skzfezsseuyqgzbdapng.supabase.co/storage/v1/object/public/cgi/WhatsApp%20Image%202026-03-20%20at%207.03.31%20PM.jpeg';
 
-export const TICKER_TEXT = "Ame Lev Lave - Sua vida mais leve, suas roupas mais limpas! • Atendimento 24h • Lavagem Ecológica • Entrega Rápida • Lavanderia Self Service • Capacidade 43L • Economia Máxima no Corujão! • ";
+export const TICKER_TEXT = "Ame Lev Lave - Sua vida mais leve, suas roupas mais limpas! • Cesto Capacidade 43L • Atendimento 24h • Lavagem Ecológica • Lavanderia Self Service • Economia Máxima no Corujão! •               ";

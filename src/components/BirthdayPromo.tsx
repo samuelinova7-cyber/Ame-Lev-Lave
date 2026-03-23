@@ -28,7 +28,7 @@ export const BirthdayPromo = () => {
           <h2 className="text-4xl md:text-7xl font-bold mb-6 tracking-tighter">
             Mês do Aniversário: <br />O Presente é Seu! 🎈
           </h2>
-          <p className="text-white/80 text-xl max-w-2xl mx-auto font-medium">
+          <p className="text-white text-xl max-w-2xl mx-auto font-medium">
             Desejamos um novo ciclo com mais leveza, boas energias… e roupas cheirosas, claro!
           </p>
         </div>
@@ -39,18 +39,18 @@ export const BirthdayPromo = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur-md p-10 rounded-[3rem] border border-white/20"
+            className="bg-black/40 backdrop-blur-md p-10 rounded-[3rem] border border-white/10"
           >
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
               <Gift className="text-brand-orange" /> O Presente
             </h3>
             <p className="text-4xl font-black mb-4">90% OFF</p>
-            <p className="text-lg font-medium text-white/80 leading-relaxed">
-              No horário promocional (00h às 05:59), sua lavagem sai por apenas <span className="text-white font-bold">R$ 1,35</span>.
+            <p className="text-lg font-bold text-white leading-relaxed">
+              O cupom é válido para qualquer horário! Se usado durante o Corujão (00h às 05:59), sua lavagem sai por apenas <span className="text-brand-orange font-black">R$ 1,35</span> - o menor valor possível.
             </p>
             
             <div className="mt-8 p-6 bg-white rounded-3xl flex flex-col items-center gap-4">
-              <span className="text-slate-400 text-xs font-bold uppercase tracking-widest">Use o Cupom</span>
+              <span className="text-slate-500 text-xs font-bold uppercase tracking-widest">Use o Cupom</span>
               <div className="flex items-center gap-4">
                 <span className="text-2xl font-black text-brand-magenta tracking-tighter">ANIVERSARIO90</span>
                 <button 
@@ -69,7 +69,7 @@ export const BirthdayPromo = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-white/10 backdrop-blur-md p-10 rounded-[3rem] border border-white/20"
+            className="bg-black/40 backdrop-blur-md p-10 rounded-[3rem] border border-white/10"
           >
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
               <RefreshCw className="text-brand-orange" /> Como Resgatar
@@ -81,8 +81,8 @@ export const BirthdayPromo = () => {
                 '3. Digite o código no campo CUPOM DE DESCONTO.'
               ].map((step) => (
                 <li key={step} className="text-lg font-bold flex items-start gap-4">
-                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-sm flex-shrink-0">{step[0]}</span>
-                  <span>{step.substring(3)}</span>
+                  <span className="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center text-sm flex-shrink-0">{step[0]}</span>
+                  <span className="text-white">{step.substring(3)}</span>
                 </li>
               ))}
             </ul>
@@ -94,23 +94,23 @@ export const BirthdayPromo = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-white/10 backdrop-blur-md p-10 rounded-[3rem] border border-white/20"
+            className="bg-black/40 backdrop-blur-md p-10 rounded-[3rem] border border-white/10"
           >
             <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
               <Calendar className="text-brand-orange" /> Regras de Ouro
             </h3>
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
-                <Calendar className="text-white/60 flex-shrink-0" size={24} />
-                <span className="font-medium">Válido até o último dia do seu mês de aniversário.</span>
+                <Calendar className="text-white flex-shrink-0" size={24} />
+                <span className="font-bold text-white">Válido até o último dia do seu mês de aniversário.</span>
               </li>
               <li className="flex items-start gap-4">
-                <RefreshCw className="text-white/60 flex-shrink-0" size={24} />
-                <span className="font-medium">Uso único por CPF cadastrado.</span>
+                <RefreshCw className="text-white flex-shrink-0" size={24} />
+                <span className="font-bold text-white">Uso único por CPF cadastrado.</span>
               </li>
               <li className="flex items-start gap-4">
                 <Ban className="text-brand-orange flex-shrink-0" size={24} />
-                <span className="font-bold text-brand-orange">Atenção: Não confunda com "Voucher"!</span>
+                <span className="font-black text-brand-orange uppercase">Atenção: Não confunda com "Voucher"!</span>
               </li>
             </ul>
           </motion.div>
