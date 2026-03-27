@@ -48,7 +48,7 @@ export const Comparison = () => {
               </div>
               <div className="flex items-center gap-3 text-slate-700 font-bold">
                 <CheckCircle2 className="text-brand-magenta" size={20} />
-                <span>Espaço para Edredom King Size</span>
+                <span>Lave mais e pague menos</span>
               </div>
             </div>
           </motion.div>
